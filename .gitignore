@@ -1,0 +1,11 @@
+# Build output only. Dependencies are git submodules (sdk/, pawn-natives/, pawn/).
+/build/
+*.o
+*.obj
+/FCNPC.dll
+/FCNPC.so
+*.lib
+*.exp
+.vs/
+.vscode/
+.DS_Store
