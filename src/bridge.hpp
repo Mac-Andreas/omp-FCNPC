@@ -16,6 +16,9 @@
 
 namespace fcnpc_bridge
 {
+	// Ped origin sits ~1 m above ground mesh (same as original ziggi FCNPC UpdateHeightPos).
+	constexpr float kGroundPedZOffset = 1.0f;
+
 	// True if a main script AMX is available to route native calls through.
 	bool available();
 
