@@ -113,6 +113,7 @@ void FCNPCComponent::onTick(Microseconds elapsed, TimePoint now)
 		float z = pos.z;
 		if (fcnpc_bridge::findGroundZ(mode, pos.x, pos.y, z))
 		{
+			z += fcnpc_bridge::kGroundPedZOffset;
 			if (z >= it->second.minHeightPosCall && std::fabs(z - pos.z) > 0.05f)
 			{
 				npc->setPosition(Vector3(pos.x, pos.y, z), false);
